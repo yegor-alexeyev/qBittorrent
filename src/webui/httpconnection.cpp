@@ -189,6 +189,7 @@ void HttpConnection::translateDocument(QString& data) {
 }
 
 void HttpConnection::respond() {
+/*
   if ((m_socket->peerAddress() != QHostAddress::LocalHost
       && m_socket->peerAddress() != QHostAddress::LocalHostIPv6)
      || m_httpserver->isLocalAuthEnabled()) {
@@ -228,6 +229,7 @@ void HttpConnection::respond() {
     // Client successfully authenticated, reset number of failed attempts
     m_httpserver->resetNbFailedAttemptsForIp(peer_ip);
   }
+*/
   QString url  = m_parser.url();
   // Favicon
   if (url.endsWith("favicon.ico")) {
